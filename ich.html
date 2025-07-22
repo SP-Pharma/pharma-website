@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ICH - Regulatory Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('pharma-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(255,255,255,0.25);
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: rgba(255,255,255,0.9);
+      border-radius: 12px;
+    }
+
+    .nav-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .home-arrow {
+      font-size: 24px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .nav-header img {
+      width: 64px;
+      height: auto;
+    }
+
+    .nav-header .full-name {
+      font-weight: bold;
+      font-size: 20px;
+      color: #003366;
+    }
+
+    .scroll-container {
+      overflow-x: auto;
+      margin-bottom: 30px;
+    }
+
+    .link-grid {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 12px;
+      min-width: fit-content;
+    }
+
+    .link-box {
+      white-space: nowrap;
+      padding: 10px 14px;
+      background-color: #e9f2ff;
+      border: 2px solid #007BFF;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 15px;
+      color: black;
+      text-align: center;
+      min-width: fit-content;
+      flex-shrink: 0;
+    }
+
+    .link-box a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .link-box a:hover {
+      text-decoration: underline;
+    }
+
+    .section-text {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    h2 {
+      color: #007BFF;
+      margin-top: 40px;
+    }
+
+    details {
+      margin-top: 20px;
+      background: #f9f9f9;
+      border-left: 4px solid #007BFF;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+
+    details summary {
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 17px;
+      color: #003366;
+    }
+
+    details p {
+      margin: 10px 0 0;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .scroll-container::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .scroll-container::-webkit-scrollbar-thumb {
+      background: #007BFF;
+      border-radius: 4px;
+    }
+
+    .scroll-container::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="nav-header">
+      <a href="index.html" class="home-arrow">←</a>
+      <img src="ich-logo.png" alt="ICH Logo" />
+      <div class="full-name">International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH)</div>
+    </div>
+
+    <!-- Grid section -->
+    <div class="scroll-container">
+      <div class="link-grid">
+        <div class="link-box"><a href="https://www.ich.org" target="_blank">ICH Official Site</a></div>
+        <div class="link-box"><a href="https://www.ich.org/page/quality-guidelines" target="_blank">Quality Guidelines</a></div>
+        <div class="link-box"><a href="https://www.ich.org/page/safety-guidelines" target="_blank">Safety Guidelines</a></div>
+        <div class="link-box"><a href="https://www.ich.org/page/efficacy-guidelines" target="_blank">Efficacy Guidelines</a></div>
+        <div class="link-box"><a href="https://www.ich.org/page/multidisciplinary-guidelines" target="_blank">Multidisciplinary Guidelines</a></div>
+        <div class="link-box"><a href="https://www.ich.org/page/history" target="_blank">ICH History</a></div>
+      </div>
+    </div>
+
+    <!-- Info Section -->
+    <div class="section-text">
+      <p>The International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) brings together regulatory authorities and pharmaceutical industry to discuss scientific and technical aspects of drug registration.</p>
+      <p>ICH's mission is to achieve greater harmonisation worldwide to ensure that safe, effective, and high-quality medicines are developed and registered in the most resource-efficient manner.</p>
+      <p>It focuses on guidelines for quality, safety, efficacy, and multidisciplinary topics that apply across regions and help streamline global regulatory expectations.</p>
+    </div>
+
+    <!-- FAQs -->
+    <h2>Frequently Asked Questions (FAQs)</h2>
+
+    <details>
+      <summary>What is ICH?</summary>
+      <p>ICH is a global initiative that develops harmonized guidelines for pharmaceutical product registration to improve efficiency and safety across borders.</p>
+    </details>
+
+    <details>
+      <summary>Who are the members of ICH?</summary>
+      <p>Members include regulatory bodies and industry associations from Europe, the US, Japan, Canada, and other global regions.</p>
+    </details>
+
+    <details>
+      <summary>What are the main guideline categories?</summary>
+      <p>ICH provides guidelines in four areas: Quality, Safety, Efficacy, and Multidisciplinary topics.</p>
+    </details>
+
+    <details>
+      <summary>How does ICH impact global pharma regulation?</summary>
+      <p>ICH harmonizes regulatory processes, helping companies submit the same data package to multiple agencies, reducing duplication.</p>
+    </details>
+
+    <details>
+      <summary>Where can I find ICH guidelines?</summary>
+      <p>All current guidelines are available for free on the official ICH website: <a href="https://www.ich.org">www.ich.org</a>.</p>
+    </details>
+
+  </div>
+
+</body>
+</html>
