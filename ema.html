@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>EMA - Irubas Pharma Regulatory Portal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+    }
+
+    /* Header */
+    header {
+      background-color: #d4e7f7;
+      display: flex;
+      align-items: center;
+      padding: 10px 30px;
+      border-bottom: 2px solid #b0cbea;
+    }
+
+    header img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      font-size: 26px;
+      color: #003366;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    /* Second bar */
+    .sub-header {
+      background-color: #b0cbea;
+      color: #003366;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px 30px;
+      font-weight: bold;
+      border-bottom: 1px solid #9cbadd;
+      font-size: 20px;
+    }
+
+    .sub-header img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    .sub-header span {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .home-icon {
+      height: 35px;
+      width: 35px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    /* Third line */
+    nav {
+      background-color: #d4e7f7;
+      display: flex;
+      justify-content: center;
+      gap: 45px;
+      padding: 14px 0;
+      font-weight: bold;
+      border-bottom: 2px solid #aac3de;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #003366;
+      font-size: 16px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #001f4d;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #003366;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* Content section */
+    .content {
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      line-height: 1.8;
+      color: #333;
+    }
+
+    h2 {
+      color: #003366;
+      border-bottom: 2px solid #aac3de;
+      padding-bottom: 5px;
+    }
+
+    .faq {
+      margin-top: 40px;
+    }
+
+    details {
+      margin: 10px 0;
+      background-color: #f4f7fb;
+      padding: 10px;
+      border-left: 4px solid #0055aa;
+      border-radius: 4px;
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      color: #003366;
+    }
+
+    p {
+      margin: 10px 0 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- First line -->
+  <header>
+    <img src="irubas-logo.png" alt="Irubas Logo">
+    <h1>IRUBAS</h1>
+  </header>
+
+  <!-- Second line -->
+  <div class="sub-header">
+    <a href="index.html"><img src="home.png" alt="Home" class="home-icon"></a>
+    <img src="ema-logo.png" alt="EMA Logo">
+    <div>
+      EMA <span>(European Medicines Agency)</span>
+    </div>
+  </div>
+
+  <!-- Third line -->
+  <nav>
+    <a href="https://www.ema.europa.eu/en" target="_blank">EMA OFFICIAL SITE</a>
+    <a href="https://www.ema.europa.eu/en/medicines" target="_blank">MEDICINES DATABASE</a>
+    <a href="https://www.ema.europa.eu/en/documents" target="_blank">GUIDELINES & DOCUMENTS</a>
+    <a href="https://www.ema.europa.eu/en/news" target="_blank">NEWS & UPDATES</a>
+    <a href="https://www.ema.europa.eu/en/about-us" target="_blank">ABOUT EMA</a>
+    <a href="https://www.ema.europa.eu/en/inspections-human-medicines" target="_blank">INSPECTIONS</a>
+  </nav>
+
+  <!-- Content -->
+  <div class="content">
+    <h2>About EMA</h2>
+    <p>The European Medicines Agency (EMA) is a decentralized agency of the European Union responsible for the scientific evaluation, supervision, and safety monitoring of medicines developed by pharmaceutical companies for use in the EU.</p>
+
+    <p>EMA works to protect public and animal health by ensuring that medicines available in the EU are safe, effective, and of high quality. It also supports innovation and research in the development of new medicines.</p>
+
+    <h2>Main Responsibilities</h2>
+    <ul>
+      <li>Evaluate marketing authorization applications for medicines in the EU.</li>
+      <li>Monitor the safety of medicines through pharmacovigilance systems.</li>
+      <li>Provide scientific advice to support pharmaceutical research and development.</li>
+      <li>Promote harmonized regulatory standards across EU member states.</li>
+      <li>Facilitate access to innovative medicines for patients in the EU.</li>
+    </ul>
+
+    <div class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>What is EMA’s role in medicine approval?</summary>
+        <p>EMA evaluates applications for centralized marketing authorization, allowing a single approval valid across all EU member states.</p>
+      </details>
+      <details>
+        <summary>What is the EMA’s pharmacovigilance function?</summary>
+        <p>EMA continuously monitors the safety of medicines and takes regulatory action when risks outweigh benefits.</p>
+      </details>
+      <details>
+        <summary>Does EMA work with other global regulators?</summary>
+        <p>Yes, EMA collaborates with agencies like the USFDA, WHO, and other international regulatory authorities to align global safety standards.</p>
+      </details>
+      <details>
+        <summary>Where can I find EMA publications?</summary>
+        <p>All EMA guidelines, reports, and scientific documents can be accessed on the <a href="https://www.ema.europa.eu/en/documents" target="_blank">EMA Publications Portal</a>.</p>
+      </details>
+    </div>
+  </div>
+
+</body>
+</html>

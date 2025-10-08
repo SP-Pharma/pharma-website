@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Health Canada - Irubas Pharma Regulatory Portal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+    }
+
+    /* Header */
+    header {
+      background-color: #d4e7f7;
+      display: flex;
+      align-items: center;
+      padding: 10px 30px;
+      border-bottom: 2px solid #b0cbea;
+    }
+
+    header img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      font-size: 26px;
+      color: #003366;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    /* Second bar */
+    .sub-header {
+      background-color: #b0cbea;
+      color: #003366;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px 30px;
+      font-weight: bold;
+      border-bottom: 1px solid #9cbadd;
+      font-size: 20px;
+    }
+
+    .sub-header img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    .sub-header span {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .home-icon {
+      height: 35px;
+      width: 35px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    /* Third line */
+    nav {
+      background-color: #d4e7f7;
+      display: flex;
+      justify-content: center;
+      gap: 45px;
+      padding: 14px 0;
+      font-weight: bold;
+      border-bottom: 2px solid #aac3de;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #003366;
+      font-size: 16px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #001f4d;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #003366;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* Content section */
+    .content {
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      line-height: 1.8;
+      color: #333;
+    }
+
+    h2 {
+      color: #003366;
+      border-bottom: 2px solid #aac3de;
+      padding-bottom: 5px;
+    }
+
+    .faq {
+      margin-top: 40px;
+    }
+
+    details {
+      margin: 10px 0;
+      background-color: #f4f7fb;
+      padding: 10px;
+      border-left: 4px solid #0055aa;
+      border-radius: 4px;
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      color: #003366;
+    }
+
+    p {
+      margin: 10px 0 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- First line -->
+  <header>
+    <img src="irubas-logo.png" alt="Irubas Logo">
+    <h1>IRUBAS</h1>
+  </header>
+
+  <!-- Second line -->
+  <div class="sub-header">
+    <a href="index.html"><img src="home.png" alt="Home" class="home-icon"></a>
+    <img src="health-canada-logo.png" alt="Health Canada Logo">
+    <div>
+      HEALTH CANADA <span>(Health Products and Food Branch - Canada)</span>
+    </div>
+  </div>
+
+  <!-- Third line -->
+  <nav>
+    <a href="https://www.canada.ca/en/health-canada.html" target="_blank">OFFICIAL SITE</a>
+    <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products.html" target="_blank">DRUGS & HEALTH PRODUCTS</a>
+    <a href="https://clinicaltrials.canada.ca/" target="_blank">CLINICAL TRIALS</a>
+    <a href="https://recalls-rappels.canada.ca/en" target="_blank">RECALLS & SAFETY ALERTS</a>
+    <a href="https://www.canada.ca/en/health-canada/services/medical-devices.html" target="_blank">MEDICAL DEVICES</a>
+    <a href="https://www.canada.ca/en/health-canada/services/regulatory-transparency-enterprise.html" target="_blank">REGULATORY TRANSPARENCY</a>
+  </nav>
+
+  <!-- Content -->
+  <div class="content">
+    <h2>About Health Canada</h2>
+    <p>Health Canada is the federal department responsible for helping Canadians maintain and improve their health. It ensures that health products, foods, and pharmaceuticals available in Canada are safe, effective, and of high quality.</p>
+
+    <p>Through its Health Products and Food Branch (HPFB), Health Canada regulates the production, import, and marketing of health-related products such as pharmaceuticals, biologics, natural health products, and medical devices.</p>
+
+    <h2>Main Responsibilities</h2>
+    <ul>
+      <li>Regulate drugs, medical devices, and natural health products in Canada.</li>
+      <li>Review and authorize new drug submissions for market approval.</li>
+      <li>Ensure post-market surveillance and report on product safety issues.</li>
+      <li>Provide recall alerts and maintain product safety databases.</li>
+      <li>Promote transparency through public regulatory decision summaries.</li>
+    </ul>
+
+    <div class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>How does Health Canada approve drugs?</summary>
+        <p>Drugs are approved after a thorough review of clinical data demonstrating safety, efficacy, and quality, followed by authorization for sale in Canada.</p>
+      </details>
+      <details>
+        <summary>What is the role of HPFB?</summary>
+        <p>The Health Products and Food Branch (HPFB) oversees the regulation of health products and foods, ensuring compliance with safety standards.</p>
+      </details>
+      <details>
+        <summary>Where can I find recall information?</summary>
+        <p>All recalls and safety alerts are available through the Canada Recalls and Safety Alerts database at recalls-rappels.canada.ca.</p>
+      </details>
+      <details>
+        <summary>Does Health Canada collaborate internationally?</summary>
+        <p>Yes, Health Canada works with international regulators like the USFDA, EMA, and WHO to harmonize safety and regulatory practices.</p>
+      </details>
+    </div>
+  </div>
+
+</body>
+</html>

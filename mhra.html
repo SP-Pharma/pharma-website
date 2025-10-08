@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MHRA - Irubas Pharma Regulatory Portal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+    }
+
+    /* Header */
+    header {
+      background-color: #d4e7f7;
+      display: flex;
+      align-items: center;
+      padding: 10px 30px;
+      border-bottom: 2px solid #b0cbea;
+    }
+
+    header img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      font-size: 26px;
+      color: #003366;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    /* Second bar */
+    .sub-header {
+      background-color: #b0cbea;
+      color: #003366;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px 30px;
+      font-weight: bold;
+      border-bottom: 1px solid #9cbadd;
+      font-size: 20px;
+    }
+
+    .sub-header img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    .sub-header span {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .home-icon {
+      height: 35px;
+      width: 35px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    /* Third line */
+    nav {
+      background-color: #d4e7f7;
+      display: flex;
+      justify-content: center;
+      gap: 45px;
+      padding: 14px 0;
+      font-weight: bold;
+      border-bottom: 2px solid #aac3de;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #003366;
+      font-size: 16px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #001f4d;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #003366;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* Content section */
+    .content {
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      line-height: 1.8;
+      color: #333;
+    }
+
+    h2 {
+      color: #003366;
+      border-bottom: 2px solid #aac3de;
+      padding-bottom: 5px;
+    }
+
+    .faq {
+      margin-top: 40px;
+    }
+
+    details {
+      margin: 10px 0;
+      background-color: #f4f7fb;
+      padding: 10px;
+      border-left: 4px solid #0055aa;
+      border-radius: 4px;
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      color: #003366;
+    }
+
+    p {
+      margin: 10px 0 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- First line -->
+  <header>
+    <img src="irubas-logo.png" alt="Irubas Logo">
+    <h1>IRUBAS</h1>
+  </header>
+
+  <!-- Second line -->
+  <div class="sub-header">
+    <a href="index.html"><img src="home.png" alt="Home" class="home-icon"></a>
+    <img src="mhra-logo.png" alt="MHRA Logo">
+    <div>
+      MHRA <span>(Medicines and Healthcare products Regulatory Agency)</span>
+    </div>
+  </div>
+
+  <!-- Third line -->
+  <nav>
+    <a href="https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency" target="_blank">MHRA OFFICIAL SITE</a>
+    <a href="https://www.gov.uk/guidance/good-manufacturing-practice-and-good-distribution-practice" target="_blank">GMP & GDP</a>
+    <a href="https://products.mhra.gov.uk/" target="_blank">PRODUCTS DATABASE</a>
+    <a href="https://www.gov.uk/guidance/clinical-trials-for-medicines-apply-for-authorisation-in-the-uk" target="_blank">CLINICAL TRIALS</a>
+    <a href="https://yellowcard.mhra.gov.uk/" target="_blank">YELLOW CARD</a>
+    <a href="https://www.gov.uk/government/publications/mhra-guidance-and-safety-alerts" target="_blank">SAFETY ALERTS</a>
+  </nav>
+
+  <!-- Content -->
+  <div class="content">
+    <h2>About MHRA</h2>
+    <p>The Medicines and Healthcare products Regulatory Agency (MHRA) is an executive agency of the UK Department of Health and Social Care. It ensures that medicines and medical devices used in the United Kingdom are safe, effective, and of high quality.</p>
+
+    <p>MHRA regulates the manufacture, distribution, and sale of medicinal products and devices, maintaining public trust in the healthcare system and promoting innovation through scientific evaluation and regulation.</p>
+
+    <h2>Main Responsibilities</h2>
+    <ul>
+      <li>Approve and monitor medicines and medical devices for use in the UK.</li>
+      <li>Ensure compliance with Good Manufacturing Practice (GMP) and Good Distribution Practice (GDP).</li>
+      <li>Oversee pharmacovigilance and report adverse events through the Yellow Card scheme.</li>
+      <li>Provide guidance on regulatory submissions and product licensing.</li>
+      <li>Inspect manufacturing and clinical trial sites to ensure compliance.</li>
+    </ul>
+
+    <div class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>What is the role of MHRA?</summary>
+        <p>MHRA ensures that medicines and medical devices in the UK meet safety, quality, and efficacy standards before and after market authorization.</p>
+      </details>
+      <details>
+        <summary>What is the Yellow Card Scheme?</summary>
+        <p>The Yellow Card Scheme allows healthcare professionals and the public to report suspected side effects or device issues directly to MHRA.</p>
+      </details>
+      <details>
+        <summary>How can I find information about a medicine?</summary>
+        <p>Use the <a href="https://products.mhra.gov.uk/" target="_blank">MHRA Products Database</a> to search for licensed medicines and safety updates.</p>
+      </details>
+      <details>
+        <summary>What is GMP in pharmaceuticals?</summary>
+        <p>Good Manufacturing Practice (GMP) ensures that products are consistently produced and controlled according to quality standards.</p>
+      </details>
+    </div>
+  </div>
+
+</body>
+</html>

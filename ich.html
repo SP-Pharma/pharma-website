@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ICH - Irubas Pharma Regulatory Portal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+    }
+
+    /* Header (same as FDA layout) */
+    header {
+      background-color: #d4e7f7;
+      display: flex;
+      align-items: center;
+      padding: 10px 30px;
+      border-bottom: 2px solid #b0cbea;
+    }
+
+    header img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      font-size: 26px;
+      color: #003366;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    /* Second bar (ICH info) */
+    .sub-header {
+      background-color: #b0cbea;
+      color: #003366;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px 30px;
+      font-weight: bold;
+      border-bottom: 1px solid #9cbadd;
+      font-size: 20px;
+    }
+
+    .sub-header img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    .sub-header span {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .home-icon {
+      height: 35px;
+      width: 35px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    /* Third line (hover-highlight nav like FDA) */
+    nav {
+      background-color: #d4e7f7;
+      display: flex;
+      justify-content: center;
+      gap: 45px;
+      padding: 14px 0;
+      font-weight: bold;
+      border-bottom: 2px solid #aac3de;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #003366;
+      font-size: 16px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #001f4d;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #003366;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* Content section */
+    .content {
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      line-height: 1.8;
+      color: #333;
+    }
+
+    h2 {
+      color: #003366;
+      border-bottom: 2px solid #aac3de;
+      padding-bottom: 5px;
+    }
+
+    .faq {
+      margin-top: 40px;
+    }
+
+    details {
+      margin: 10px 0;
+      background-color: #f4f7fb;
+      padding: 10px;
+      border-left: 4px solid #0055aa;
+      border-radius: 4px;
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      color: #003366;
+    }
+
+    p {
+      margin: 10px 0 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- First line -->
+  <header>
+    <img src="irubas-logo.png" alt="Irubas Logo">
+    <h1>IRUBAS</h1>
+  </header>
+
+  <!-- Second line -->
+  <div class="sub-header">
+    <a href="index.html"><img src="home.png" alt="Home" class="home-icon"></a>
+    <img src="ich-logo.png" alt="ICH Logo">
+    <div>
+      ICH <span>(International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use)</span>
+    </div>
+  </div>
+
+  <!-- Third line -->
+  <nav>
+    <a href="https://www.ich.org/" target="_blank">ICH OFFICIAL SITE</a>
+    <a href="https://www.ich.org/page/quality-guidelines" target="_blank">QUALITY GUIDELINES</a>
+    <a href="https://www.ich.org/page/safety-guidelines" target="_blank">SAFETY GUIDELINES</a>
+    <a href="https://www.ich.org/page/efficacy-guidelines" target="_blank">EFFICACY GUIDELINES</a>
+    <a href="https://www.ich.org/page/multidisciplinary-guidelines" target="_blank">MULTIDISCIPLINARY</a>
+    <a href="https://www.ich.org/page/history" target="_blank">ICH HISTORY</a>
+  </nav>
+
+  <!-- Content section -->
+  <div class="content">
+    <h2>About ICH</h2>
+    <p>The International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) is an initiative that brings together regulatory authorities and the pharmaceutical industry to discuss scientific and technical aspects of drug registration. It aims to harmonize guidelines and standards to ensure safe, effective, and high-quality medicines are developed and registered efficiently worldwide.</p>
+
+    <p>Established in 1990, ICH’s mission is to achieve greater harmonisation worldwide to ensure that safe, effective, and high-quality medicines are developed and registered efficiently, benefiting both industry and patients.</p>
+
+    <h2>Main Responsibilities</h2>
+    <ul>
+      <li>Develop and maintain harmonised guidelines for quality, safety, efficacy, and multidisciplinary topics.</li>
+      <li>Promote international cooperation among regulatory agencies and the pharmaceutical industry.</li>
+      <li>Reduce duplication of clinical trials and data submissions by harmonising regulatory standards.</li>
+      <li>Support the implementation of harmonised guidelines in regulatory systems worldwide.</li>
+      <li>Facilitate continuous improvement of pharmaceutical regulations to meet scientific advancements.</li>
+    </ul>
+
+    <div class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>What is the purpose of ICH?</summary>
+        <p>ICH aims to harmonise the technical requirements for the registration of pharmaceuticals among major global markets, reducing duplication and ensuring patient safety.</p>
+      </details>
+      <details>
+        <summary>Which regions are part of ICH?</summary>
+        <p>ICH includes regulatory authorities and industry associations from Europe (EMA), Japan (MHLW/PMDA), the United States (FDA), and other regions worldwide.</p>
+      </details>
+      <details>
+        <summary>What are ICH Guidelines?</summary>
+        <p>ICH Guidelines provide harmonised standards covering Quality (Q), Safety (S), Efficacy (E), and Multidisciplinary (M) topics for pharmaceutical product development and registration.</p>
+      </details>
+      <details>
+        <summary>How does ICH benefit the pharmaceutical industry?</summary>
+        <p>ICH helps streamline global regulatory processes, reducing costs, time, and duplication in pharmaceutical development and approval.</p>
+      </details>
+    </div>
+  </div>
+
+</body>
+</html>

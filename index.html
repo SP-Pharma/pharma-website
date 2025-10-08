@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Irubas Portal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-image: url('pharma-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    /* --- Top Header --- */
+    header {
+      background-color: #cfe8f7; /* light blue */
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 12px 40px;
+      border-bottom: 2px solid #9dc3e6;
+    }
+
+    header img {
+      height: 50px;
+      margin-right: 12px;
+    }
+
+    header h1 {
+      color: #0b3d91;
+      font-size: 26px;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: 0.5px;
+    }
+
+    /* --- Navigation Bar --- */
+    nav {
+      background-color: #e3f2fd;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 8px 0;
+      border-bottom: 2px solid #b0c9e8;
+      gap: 8px;
+    }
+
+    .nav-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      background: #ffffff;
+      border: 1px solid #bcd5f1;
+      border-radius: 6px;
+      padding: 5px 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .nav-item:hover {
+      background-color: #dceeff;
+      transform: translateY(-2px);
+    }
+
+    .nav-item img {
+      height: 28px;
+      width: auto;
+      margin-right: 6px;
+    }
+
+    .nav-item a {
+      text-decoration: none;
+      color: #003366;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .arrow {
+      font-size: 12px;
+      color: #003366;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+
+    /* Dropdown */
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 110%;
+      left: 0;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      z-index: 1000;
+      min-width: 230px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .dropdown-btn {
+      display: block;
+      text-decoration: none;
+      color: #003366;
+      padding: 10px;
+      font-size: 14px;
+      border-bottom: 1px solid #eee;
+      transition: background 0.2s;
+    }
+
+    .dropdown-btn:hover {
+      background: #f0f8ff;
+    }
+
+    .nav-item:hover .dropdown {
+      display: block;
+    }
+
+    /* --- Content Area --- */
+    .content {
+      max-width: 1000px;
+      margin: 50px auto;
+      background-color: rgba(255,255,255,0.9);
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #003366;
+    }
+
+    h2 {
+      color: #003366;
+      margin-top: 30px;
+    }
+
+    p {
+      line-height: 1.8;
+      color: #333;
+    }
+
+    details {
+      margin: 10px 0;
+      background-color: #f9f9f9;
+      padding: 10px;
+      border-left: 4px solid #007BFF;
+      border-radius: 4px;
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      color: #003366;
+    }
+
+    footer {
+      text-align: center;
+      color: #555;
+      padding: 20px 0;
+      font-size: 14px;
+      background-color: rgba(255,255,255,0.85);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="irubas-logo.png" alt="Irubas Logo">
+    <h1>IRUBAS</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <!-- ICH -->
+    <div class="nav-item">
+      <img src="ich-logo.png" alt="ICH Logo">
+      <a href="ich.html">ICH</a>
+      <span class="arrow">▼</span>
+      <div class="dropdown">
+        <a href="https://www.ich.org" target="_blank" class="dropdown-btn">ICH Official Site</a>
+        <a href="https://www.ich.org/page/quality-guidelines" target="_blank" class="dropdown-btn">Quality Guidelines</a>
+        <a href="https://www.ich.org/page/safety-guidelines" target="_blank" class="dropdown-btn">Safety Guidelines</a>
+        <a href="https://www.ich.org/page/efficacy-guidelines" target="_blank" class="dropdown-btn">Efficacy Guidelines</a>
+        <a href="https://www.ich.org/page/multidisciplinary-guidelines" target="_blank" class="dropdown-btn">Multidisciplinary Guidelines</a>
+        <a href="https://www.ich.org/page/about" target="_blank" class="dropdown-btn">ICH History</a>
+      </div>
+    </div>
+
+    <!-- USFDA -->
+    <div class="nav-item">
+      <img src="usfda-logo.png" alt="USFDA Logo">
+      <a href="fda.html">USFDA</a>
+      <span class="arrow">▼</span>
+      <div class="dropdown">
+        <a href="https://www.fda.gov" target="_blank" class="dropdown-btn">USFDA Official Site</a>
+        <a href="https://www.fda.gov/drugs/guidances-drugs" target="_blank" class="dropdown-btn">Drug Guidelines</a>
+        <a href="https://www.fda.gov/vaccines-blood-biologics" target="_blank" class="dropdown-btn">Biologics</a>
+        <a href="https://www.fda.gov/medical-devices" target="_blank" class="dropdown-btn">Medical Devices</a>
+        <a href="https://www.accessdata.fda.gov/scripts/cder/dissolution/" target="_blank" class="dropdown-btn">Dissolution Database</a>
+        <a href="https://www.fda.gov/about-fda" target="_blank" class="dropdown-btn">About FDA</a>
+      </div>
+    </div>
+
+    <!-- WHO -->
+    <div class="nav-item">
+      <img src="who-logo.png" alt="WHO Logo">
+      <a href="who.html">WHO</a>
+      <span class="arrow">▼</span>
+      <div class="dropdown">
+        <a href="https://www.who.int" target="_blank" class="dropdown-btn">WHO Official Site</a>
+        <a href="https://www.who.int/health-topics/pharmaceuticals" target="_blank" class="dropdown-btn">Pharmaceutical Standards</a>
+        <a href="https://www.who.int/teams/health-product-policy-and-standards" target="_blank" class="dropdown-btn">Health Product Policy</a>
+        <a href="https://www.who.int/publications" target="_blank" class="dropdown-btn">Publications</a>
+        <a href="https://www.who.int/about" target="_blank" class="dropdown-btn">About WHO</a>
+      </div>
+    </div>
+
+    <!-- EMA -->
+    <div class="nav-item">
+      <img src="ema-logo.png" alt="EMA Logo">
+      <a href="ema.html">EMA</a>
+      <span class="arrow">▼</span>
+      <div class="dropdown">
+        <a href="https://www.ema.europa.eu/en" target="_blank" class="dropdown-btn">EMA Official Site</a>
+        <a href="https://www.ema.europa.eu/en/human-regulatory/overview" target="_blank" class="dropdown-btn">Human Medicines</a>
+        <a href="https://www.ema.europa.eu/en/veterinary-regulatory" target="_blank" class="dropdown-btn">Veterinary Medicines</a>
+        <a href="https://www.ema.europa.eu/en/medicines" target="_blank" class="dropdown-btn">Medicines Database</a>
+        <a href="https://www.ema.europa.eu/en/about-us" target="_blank" class="dropdown-btn">About EMA</a>
+      </div>
+    </div>
+
+    <!-- MHRA -->
+    <div class="nav-item">
+      <img src="mhra-logo.png" alt="MHRA Logo">
+      <a href="mhra.html">MHRA</a>
+      <span class="arrow">▼</span>
+      <div class="dropdown">
+        <a href="https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency" target="_blank" class="dropdown-btn">MHRA Official Site</a>
+        <a href="https://www.gov.uk/guidance" target="_blank" class="dropdown-btn">Guidance Documents</a>
+        <a href="https://www.gov.uk/drug-device-alerts" target="_blank" class="dropdown-btn">Safety Alerts</a>
+        <a href="https://www.gov.uk/medicines" target="_blank" class="dropdown-btn">Medicines Information</a>
+        <a href="https://www.gov.uk/about-mhra" target="_blank" class="dropdown-btn">About MHRA</a>
+      </div>
+    </div>
+
+    <!-- CDSCO -->
+    <div class="nav-item">
+      <img src="cdsco-logo.png" alt="CDSCO Logo">
+      <a href="cdsco.html">CDSCO</a>
+      <span class="arrow">▼</span>
+      <div class="dropdown">
+        <a href="https://cdsco.gov.in" target="_blank" class="dropdown-btn">CDSCO Official Site</a>
+        <a href="https://cdsco.gov.in/opencms/opencms/en/Notifications/GUIDELINES/" target="_blank" class="dropdown-btn">Guidelines</a>
+        <a href="https://cdsco.gov.in/opencms/opencms/en/Medical-Device-Diagnostics-Division/" target="_blank" class="dropdown-btn">Medical Devices</a>
+        <a href="https://cdsco.gov.in/opencms/opencms/en/Drugs/" target="_blank" class="dropdown-btn">Drugs</a>
+        <a href="https://cdsco.gov.in/opencms/opencms/en/About-us/" target="_blank" class="dropdown-btn">About CDSCO</a>
+      </div>
+    </div>
+
+    <!-- PMDA -->
+    <div class="nav-item">
+      <img src="pmda-logo.png" alt="PMDA Logo">
+      <a href="pmda.html">PMDA</a>
+      <span class="arrow">▼</span>
+      <div class="dropdown">
+        <a href="https://www.pmda.go.jp/english/" target="_blank" class="dropdown-btn">PMDA Official Site</a>
+        <a href="https://www.pmda.go.jp/english/review-services/" target="_blank" class="dropdown-btn">Review Services</a>
+        <a href="https://www.pmda.go.jp/english/safety/" target="_blank" class="dropdown-btn">Safety Information</a>
+        <a href="https://www.pmda.go.jp/english/about-pmda/" target="_blank" class="dropdown-btn">About PMDA</a>
+      </div>
+    </div>
+
+    <!-- Health Canada -->
+    <div class="nav-item">
+      <img src="health-canada-logo.png" alt="Health Canada Logo">
+      <a href="health-canada.html">Health Canada</a>
+      <span class="arrow">▼</span>
+      <div class="dropdown">
+        <a href="https://www.canada.ca/en/health-canada.html" target="_blank" class="dropdown-btn">Official Site</a>
+        <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products.html" target="_blank" class="dropdown-btn">Drugs & Health Products</a>
+        <a href="https://www.canada.ca/en/health-canada/services/medical-devices.html" target="_blank" class="dropdown-btn">Medical Devices</a>
+        <a href="https://www.canada.ca/en/health-canada/corporate/about-health-canada.html" target="_blank" class="dropdown-btn">About Health Canada</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="content">
+    <h1><u>Welcome</u></h1>
+    <p>This portal serves as a centralized access point for major global regulatory agencies involved in the approval, monitoring, and safety of pharmaceutical and medical products. It helps professionals, researchers, and the public quickly navigate to official resources from trusted authorities worldwide. The platform also offers a curated overview of each agency's responsibilities, resources, and relevant documentation to simplify access to high-quality regulatory content.</p>
+
+    <p>Through this portal, you can explore regulatory news, guidance documents, product safety updates, and essential information from agencies like the USFDA, EMA, CDSCO, and more. Whether you are a pharma professional, policymaker, student, or general public, this site aims to provide a user-friendly and unified interface to stay informed and compliant.</p>
+
+    <div class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>What is a regulatory body?</summary>
+        <p>A regulatory body is a government agency responsible for overseeing and enforcing laws related to health, safety, and product standards.</p>
+      </details>
+      <details>
+        <summary>Which regulatory bodies are listed here?</summary>
+        <p>This portal links to major agencies like USFDA, EMA, WHO, MHRA, CDSCO, and more.</p>
+      </details>
+      <details>
+        <summary>How can I check if a medicine is approved?</summary>
+        <p>Visit the respective agency page from the menu above and use their drug database or approval section.</p>
+      </details>
+      <details>
+        <summary>Can I report a side effect or drug issue?</summary>
+        <p>Yes, most agencies have a safety or pharmacovigilance section where you can report adverse events.</p>
+      </details>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 IRUBAS. All Rights Reserved.
+  </footer>
+
+</body>
+</html>

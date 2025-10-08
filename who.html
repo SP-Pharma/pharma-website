@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WHO - Irubas Pharma Regulatory Portal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+    }
+
+    /* Header */
+    header {
+      background-color: #d4e7f7;
+      display: flex;
+      align-items: center;
+      padding: 10px 30px;
+      border-bottom: 2px solid #b0cbea;
+    }
+
+    header img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      font-size: 26px;
+      color: #003366;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    /* Second bar (WHO info) */
+    .sub-header {
+      background-color: #b0cbea;
+      color: #003366;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px 30px;
+      font-weight: bold;
+      border-bottom: 1px solid #9cbadd;
+      font-size: 20px;
+    }
+
+    .sub-header img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    .sub-header span {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .home-icon {
+      height: 35px;
+      width: 35px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    /* Third line (nav bar) */
+    nav {
+      background-color: #d4e7f7;
+      display: flex;
+      justify-content: center;
+      gap: 45px;
+      padding: 14px 0;
+      font-weight: bold;
+      border-bottom: 2px solid #aac3de;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #003366;
+      font-size: 16px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #001f4d;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #003366;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* Content section */
+    .content {
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      line-height: 1.8;
+      color: #333;
+    }
+
+    h2 {
+      color: #003366;
+      border-bottom: 2px solid #aac3de;
+      padding-bottom: 5px;
+    }
+
+    .faq {
+      margin-top: 40px;
+    }
+
+    details {
+      margin: 10px 0;
+      background-color: #f4f7fb;
+      padding: 10px;
+      border-left: 4px solid #0055aa;
+      border-radius: 4px;
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      color: #003366;
+    }
+
+    p {
+      margin: 10px 0 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- First line -->
+  <header>
+    <img src="irubas-logo.png" alt="Irubas Logo">
+    <h1>IRUBAS</h1>
+  </header>
+
+  <!-- Second line -->
+  <div class="sub-header">
+    <a href="index.html"><img src="home.png" alt="Home" class="home-icon"></a>
+    <img src="who-logo.png" alt="WHO Logo">
+    <div>
+      WHO <span>(World Health Organization)</span>
+    </div>
+  </div>
+
+  <!-- Third line -->
+  <nav>
+    <a href="https://www.who.int/" target="_blank">WHO OFFICIAL SITE</a>
+    <a href="https://www.who.int/health-topics/pharmaceutical-products" target="_blank">PHARMACEUTICAL PRODUCTS</a>
+    <a href="https://www.who.int/medicines/areas/quality_safety/quality_assurance" target="_blank">QUALITY ASSURANCE</a>
+    <a href="https://www.who.int/medicines/regulation/prequalification" target="_blank">PREQUALIFICATION</a>
+    <a href="https://www.who.int/publications" target="_blank">PUBLICATIONS</a>
+    <a href="https://www.who.int/about/who-we-are" target="_blank">ABOUT WHO</a>
+  </nav>
+
+  <!-- Content section -->
+  <div class="content">
+    <h2>About WHO</h2>
+    <p>The World Health Organization (WHO) is a specialized agency of the United Nations responsible for international public health. Founded in 1948, WHO works to promote health, keep the world safe, and serve the vulnerable through its leadership on global health matters.</p>
+
+    <p>WHO plays a crucial role in setting international health standards, supporting countries in implementing evidence-based policies, and ensuring equitable access to safe and effective medicines, vaccines, and health technologies.</p>
+
+    <h2>Main Responsibilities</h2>
+    <ul>
+      <li>Develop international health regulations and guidelines to improve global health outcomes.</li>
+      <li>Ensure access to essential medicines, vaccines, and health products.</li>
+      <li>Strengthen health systems and promote universal health coverage.</li>
+      <li>Coordinate international responses to health emergencies and outbreaks.</li>
+      <li>Provide leadership and partnerships for health promotion and disease prevention.</li>
+    </ul>
+
+    <div class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>What is WHO’s role in pharmaceuticals?</summary>
+        <p>WHO provides leadership and guidance to ensure that medicines meet global standards of quality, safety, and efficacy through its prequalification and quality assurance programs.</p>
+      </details>
+      <details>
+        <summary>What are WHO prequalified medicines?</summary>
+        <p>WHO prequalified medicines are products that meet WHO’s strict quality, safety, and efficacy requirements for use in international procurement programs.</p>
+      </details>
+      <details>
+        <summary>How does WHO support regulatory authorities?</summary>
+        <p>WHO assists national regulatory agencies in building capacity, improving oversight, and harmonizing standards for medicine registration and monitoring.</p>
+      </details>
+      <details>
+        <summary>Where can I find WHO publications?</summary>
+        <p>WHO publishes reports, research, and guidelines on various global health topics. These are accessible on the <a href="https://www.who.int/publications" target="_blank">WHO Publications Portal</a>.</p>
+      </details>
+    </div>
+  </div>
+
+</body>
+</html>
