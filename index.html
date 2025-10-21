@@ -112,9 +112,32 @@
       background: #f0f8ff;
     }
 
-    .nav-item:hover .dropdown {
-      display: block;
-    }
+    .dropdown {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 9999;
+  min-width: 200px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Show dropdown when triangle (arrow) is active or hovered */
+.arrow:hover + .dropdown,
+.arrow.active + .dropdown,
+.dropdown:hover {
+  display: block;
+}
+
+/* Optional: Make the triangle rotate when open */
+.arrow.active {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
 
     /* --- Content Area --- */
     .content {
@@ -414,6 +437,44 @@
       </details>
     </div>
   </div>
+  <script>
+document.querySelectorAll('.arrow').forEach(arrow => {
+  arrow.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const dropdown = arrow.nextElementSibling;
+
+    // Close all other dropdowns first
+    document.querySelectorAll('.dropdown').forEach(d => {
+      if (d !== dropdown) d.style.display = 'none';
+    });
+    document.querySelectorAll('.arrow').forEach(a => {
+      if (a !== arrow) a.classList.remove('active');
+    });
+
+    // Toggle dropdown
+    if (dropdown.style.display === 'block') {
+      dropdown.style.display = 'none';
+      arrow.classList.remove('active');
+    } else {
+      dropdown.style.display = 'block';
+      arrow.classList.add('active');
+    }
+  });
+});
+
+// Keep dropdown visible while hovering
+document.querySelectorAll('.dropdown').forEach(drop => {
+  drop.addEventListener('mouseenter', () => drop.style.display = 'block');
+  drop.addEventListener('mouseleave', () => drop.style.display = 'none');
+});
+
+// Close dropdown when clicking outside
+document.addEventListener('click', () => {
+  document.querySelectorAll('.dropdown').forEach(d => d.style.display = 'none');
+  document.querySelectorAll('.arrow').forEach(a => a.classList.remove('active'));
+});
+</script>
+
 
   <footer>
     &copy; 2025 IRUBAS. All Rights Reserved.
@@ -421,6 +482,7 @@
 
 </body>
 </html>
+
 
 
 
