@@ -85,18 +85,28 @@
     }
 
     /* Dropdown */
-    .dropdown {
-      display: none;
-      position: absolute;
-      top: 110%;
-      left: 0;
-      background: white;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      z-index: 1000;
-      min-width: 230px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
+    /* --- Fix for MHRA dropdown visibility --- */
+.nav-item {
+  position: relative;
+  z-index: auto;
+}
+
+.nav-item:hover,
+.nav-item:focus-within {
+  z-index: 9999; /* active nav item comes to top */
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 99999; /* keeps MHRA dropdown above Health Canada */
+}
+
 
     .dropdown-btn {
       display: block;
@@ -482,6 +492,7 @@ document.addEventListener('click', () => {
 
 </body>
 </html>
+
 
 
 
