@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Feedback | IRUBAS Portal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #e8f1fa;
+      background-image: url('pharma-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    /* Header */
+    header {
+      background-color: #cfe8f7;
+      display: flex;
+      align-items: center;
+      padding: 12px 40px;
+      border-bottom: 2px solid #9dc3e6;
+    }
+
+    header img {
+      height: 50px;
+      margin-right: 12px;
+    }
+
+    header h1 {
+      color: #0b3d91;
+      font-size: 26px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    /* Navigation line below header */
+    .nav-bar {
+      background-color: #e3f2fd;
+      display: flex;
+      align-items: center;
+      padding: 10px 40px;
+      border-bottom: 2px solid #b0c9e8;
+    }
+
+    .nav-bar img {
+      height: 28px;
+      width: auto;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .nav-bar a {
+      text-decoration: none;
+      color: #003366;
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    /* Feedback Title */
+    .page-title {
+      text-align: center;
+      color: #003366;
+      font-size: 28px;
+      font-weight: bold;
+      margin: 40px 0 20px 0;
+    }
+
+    /* Feedback Box */
+    .feedback-container {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .feedback-container label {
+      display: block;
+      font-weight: 600;
+      color: #003366;
+      margin-bottom: 8px;
+    }
+
+    .feedback-container input[type="text"],
+    .feedback-container textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #9dc3e6;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      font-size: 14px;
+      resize: vertical;
+    }
+
+    .feedback-container button {
+      background-color: #0b3d91;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .feedback-container button:hover {
+      background-color: #005bb5;
+    }
+
+    footer {
+      text-align: center;
+      color: #555;
+      padding: 20px 0;
+      font-size: 14px;
+      background-color: rgba(255,255,255,0.85);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="irubas-logo.png" alt="Irubas Logo">
+    <h1>IRUBAS</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <div class="nav-bar">
+    <a href="index.html"><img src="home-icon.png" alt="Home Icon"></a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+
+  <!-- Feedback Title -->
+  <div class="page-title">Feedback</div>
+
+  <!-- Feedback Form -->
+  <div class="feedback-container">
+    <form action="https://formsubmit.co/sppharma.cl@gmail.com" method="POST">
+      <!-- Security features -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Feedback from IRUBAS Portal">
+      <input type="hidden" name="_template" value="table">
+
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="Name" placeholder="Enter your name" required>
+
+      <label for="feedback">Your Feedback:</label>
+      <textarea id="feedback" name="Feedback" rows="6" placeholder="Enter your feedback here" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 IRUBAS. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
