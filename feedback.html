@@ -130,7 +130,7 @@
 
   <!-- Navigation Bar -->
   <div class="nav-bar">
-    <a href="index.html"><img src="home-icon.png" alt="Home Icon"></a>
+    <a href="index.html"><img src="home.png" alt="Home Icon"></a>
     <a href="feedback.html">Feedback</a>
   </div>
 
@@ -139,20 +139,24 @@
 
   <!-- Feedback Form -->
   <div class="feedback-container">
-    <form action="https://formsubmit.co/sppharma.cl@gmail.com" method="POST">
-      <!-- Security features -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_subject" value="New Feedback from IRUBAS Portal">
-      <input type="hidden" name="_template" value="table">
+   <form action="https://formsubmit.co/sppharma.cl@gmail.com" method="POST">
+  <!-- Security features -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New Feedback from IRUBAS Portal">
+  <input type="hidden" name="_template" value="table">
 
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="Name" placeholder="Enter your name" required>
+  <!-- Redirect after submission -->
+  <input type="hidden" name="_next" value="https://irubas.github.io/index.html">
 
-      <label for="feedback">Your Feedback:</label>
-      <textarea id="feedback" name="Feedback" rows="6" placeholder="Enter your feedback here" required></textarea>
+  <label for="name">Your Name:</label>
+  <input type="text" id="name" name="Name" placeholder="Enter your name" required>
 
-      <button type="submit">Submit</button>
-    </form>
+  <label for="feedback">Your Feedback:</label>
+  <textarea id="feedback" name="Feedback" rows="6" placeholder="Enter your feedback here" required></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+
   </div>
 
   <!-- Footer -->
@@ -162,3 +166,4 @@
 
 </body>
 </html>
+
